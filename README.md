@@ -7,7 +7,7 @@ Demo project for native integration using android library
 
   [native_lib.aar](https://github.com/ndsdevteam/android-native-library-integration-demo/raw/master/app/libs/native_lib.aar)
   
-  Put the file into the **libs** folder
+  **Put the file into the libs folder**
 
 2. Include the AAR file to the Application project
   * In project level build.gradle file

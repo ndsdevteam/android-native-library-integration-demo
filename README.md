@@ -30,7 +30,7 @@ Demo project for native integration using android library
   ```
 3. Call the Activity
 
-  ```
+  ```java
   Intent intent = new Intent(MainActivity.this, com.nds.nativelibrary.MainActivity.class);
   startActivity(intent);
   ```

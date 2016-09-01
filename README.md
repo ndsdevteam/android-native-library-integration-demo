@@ -6,7 +6,7 @@ Demo project for native integration using android library
 1. Download the AAR file
 
   [native_lib.aar](https://github.com/ndsdevteam/android-native-library-integration-demo/raw/master/app/libs/native_lib.aar)
-  
+
   **Put the file into the libs folder**
 
 2. Include the AAR file to the Application project
@@ -15,9 +15,13 @@ Demo project for native integration using android library
   allprojects {
       repositories {
           ...
-          flatDir {
-              dirs 'libs'
-          }
+          maven {
+            url "http://nds-artifactory-oss.ap-northeast-1.elasticbeanstalk.com/artifactory/test-artifactory"
+            credentials {
+                username = "user"
+                password = ""
+            }
+        }
           ...
       }
   }
@@ -26,7 +30,7 @@ Demo project for native integration using android library
   ```gradle
   dependencies {
       ...
-      compile (name:'native_lib',ext: 'aar')
+      compile('com.nds:native_library:1.0.0')
       ...
   }
   ```

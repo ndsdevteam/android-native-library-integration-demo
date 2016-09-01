@@ -10,12 +10,12 @@ Demo project for native integration using android library
       repositories {
           ...
           maven {
-            url "http://nds-artifactory-oss.ap-northeast-1.elasticbeanstalk.com/artifactory/test-artifactory"
-            credentials {
-                username = "user"
-                password = ""
-            }
-        }
+              url "http://nds-artifactory-oss.ap-northeast-1.elasticbeanstalk.com/artifactory/test-artifactory"
+              credentials {
+                  username = "user"
+                  password = ""
+              }
+          }
           ...
       }
   }

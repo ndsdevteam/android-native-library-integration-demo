@@ -15,8 +15,12 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
-        flatDir {
-            dirs 'libs'
+        maven {
+            url "http://nds-artifactory-oss.ap-northeast-1.elasticbeanstalk.com/artifactory/test-artifactory"
+            credentials {
+                username = "user"
+                password = "APDyRSWU93Y1zomd"
+            }
         }
     }
 }

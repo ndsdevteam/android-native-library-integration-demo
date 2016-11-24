@@ -23,8 +23,15 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.0.0'
+    compile 'com.android.support:recyclerview-v7:23.0.0'
+    compile 'com.android.support:cardview-v7:23.0.0'
 
     //compile('com.nds:native_library:1.0.0')
-    compile('hk.redpages:service_tab:<version>')
+    compile('hk.redpages:service_tab:0.4.0-SNAPSHOT.188'){
+        exclude module: 'appcompat-v7'
+        exclude module: 'recyclerview-v7'
+        exclude module: 'support-v4'
+        exclude module: 'support-v13'
+    }
 
 }

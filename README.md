@@ -1,6 +1,6 @@
 # android-native-library-integration-demo
 
-*This Project is no longer maintained. Please refer to this [Standalone app project](https://github.com/ndsdevteam/Android-Redpages-app)
+*This Project is no longer maintained. Please refer to this [Standalone app project](https://github.com/ndsdevteam/Android-Redpages-app)*
 
 Demo project for native integration using android library
 
